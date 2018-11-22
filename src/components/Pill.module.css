@@ -1,0 +1,7 @@
+.pill {
+    width: 6em;
+    height: 2em;
+    max-width: 100%;
+    background-color: #E64444;
+    border-radius: 2em;
+}
