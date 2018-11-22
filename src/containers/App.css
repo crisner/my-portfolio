@@ -4,5 +4,14 @@ body {
 }
 
 .App {
-  color: white;
+  color: #FFF;
+}
+
+.App h1,
+.App h3 {
+  color: #E64444;
+}
+
+.App h2 {
+  color: #F6D4D4;
 }
