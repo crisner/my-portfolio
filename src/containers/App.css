@@ -1,6 +1,7 @@
 body {
   background-color: #393030;
   font-size: 12px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .App {
@@ -10,8 +11,10 @@ body {
 .App h1,
 .App h3 {
   color: #E64444;
+  font-family: 'Rubik', sans-serif;
 }
 
 .App h2 {
   color: #F6D4D4;
+  font-family: 'Rubik', sans-serif;
 }
