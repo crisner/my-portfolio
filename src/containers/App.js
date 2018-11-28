@@ -3,6 +3,7 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
+import Portfolio from './Portfolio';
 import './App.css';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Home />
+        <Portfolio />
         <About />
         <Contact />
       </div>
