@@ -16,19 +16,15 @@
     transform: translate(0, -50%);
 }
 
-.menu li {
-    padding-bottom: 0.6em;
-}
-
 .menu li a {
     color: #E64444;
     text-decoration: none;
     text-anchor: middle;
 }
 
-.menu li a:hover {
+/* .menu li a:hover {
     font-weight: 500;
-}
+} */
 
 .hoverLink {
     text-align: left;
@@ -41,7 +37,7 @@
 
 .bullet {
     font-size: 0.3em;
-    padding: 0 0 0 0.2em;
+    padding: 0 0 0 3.2em;
 }
 
 .menuBullet {
