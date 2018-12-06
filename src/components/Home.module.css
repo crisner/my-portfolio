@@ -1,0 +1,19 @@
+.Home {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-20%, -30%);
+}
+
+h1 {
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Fira Sans', sans-serif !important;
+}
+
+h2 {
+    font-size: 3.2em;
+    letter-spacing: 0.1em;
+    font-family: 'Fira Sans', sans-serif !important;
+}
