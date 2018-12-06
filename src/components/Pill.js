@@ -3,9 +3,9 @@ import styles from './Pill.module.css';
 
 function Pill(props) {
     return (
-        <div className={styles.pill}>
-            <p>{props.text}</p>
-        </div>
+        <button className={styles.pill}>
+            {props.text}
+        </button>
     );
 }
 
