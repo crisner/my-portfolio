@@ -1,7 +1,15 @@
 .pill {
-    width: 6em;
-    height: 2em;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    border: none;
+    width: 8em;
+    height: 3em;
     max-width: 100%;
     background-color: #E64444;
     border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
 }
