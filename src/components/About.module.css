@@ -1,9 +1,10 @@
 .position {
     width: 65%;
+    margin-top: 6em;
     position: absolute;
-    top: 20%;
+    top: 0%;
     left: 30%;
-    transform: translate(-30%, -20%);
+    transform: translate(-30%, 0%);
 }
 
 .button {
