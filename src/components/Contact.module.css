@@ -1,0 +1,42 @@
+.position {
+    composes: position from './About.module.css';
+}
+
+.contact {
+    padding: 0.2em 0.6em 0;
+    list-style: none;
+    color: #E64444;
+    font-size: 1.8em;
+    letter-spacing: 0.08em;
+}
+
+.icons {
+    font-size: 1.8em;
+    width: 1em !important;
+}
+
+.modes {
+    display: flex;
+    flex-direction: row;
+    margin: 1.8em 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+/* a:hover {
+    color: #F6D4D4;
+} */
+
+.text {
+    padding-left: 1em;
+}
+
+/* .contactModes {
+    color: #E64444;
+    font-size: 1.4em;
+    letter-spacing: 0.08em;
+    line-height: 1.6em;
+} */
