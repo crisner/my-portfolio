@@ -18,3 +18,23 @@ body {
   color: #F6D4D4;
   font-family: 'Rubik', sans-serif;
 }
+
+.App h3 {
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.App p {
+  font-size: 1.4em;
+  letter-spacing: 0.08em;
+  line-height: 1.6em;
+}
+
+.App a {
+  color: #E64444;
+  text-decoration: none;
+}
+
+.App a:hover {
+  color: #F6D4D4;
+}
