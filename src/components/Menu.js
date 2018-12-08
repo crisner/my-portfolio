@@ -6,28 +6,31 @@ function Menu() {
     return (
         <nav className={styles.nav}>
             <ul className={styles.menu}>
-                <li className={styles.hoverLink}>
+                <li>
+                <a className={styles.hoverLink} href="#">
                     <FontAwesomeIcon className={styles.menuBullet} icon="circle" />
-                    {/* <svg height="200" width="200">
-                        <circle class="circle" cx="100" cy="100" r="95" stroke="#231f20" stroke-width="10" fill-opacity="0" />
+                    {/* <FontAwesomeIcon className={styles.circle} icon={['far', 'dot-circle']} /> */}
+                    {/* <svg className={styles.svg}>
+                        <circle cx="100" cy="100" r="10" stroke="#E64444" stroke-width="2" fill-opacity="0" />
                     </svg> */}
-                    <a href="#">Home</a>
+                    Home</a>
                 </li>
                 <li><FontAwesomeIcon className={styles.bullet} icon="circle" /></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
-                <li className={styles.hoverLink}>
+                <li>
+                <a className={styles.hoverLink} href="#">
                     <FontAwesomeIcon className={styles.menuBullet} icon="circle" />
                     {/* <svg height="200" width="200">
                         <circle class="circle" cx="100" cy="100" r="95" stroke="#231f20" stroke-width="10" fill-opacity="0" />
                     </svg> */}
-                    <a href="#">Portfolio</a>
+                    Portfolio</a>
                 </li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
-                <li className={styles.hoverLink}><FontAwesomeIcon className={styles.menuBullet} icon="circle" /><a href="#">About me</a></li>
+                <li><a className={styles.hoverLink} href="#"><FontAwesomeIcon className={styles.menuBullet} icon="circle" />About me</a></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
-                <li className={styles.hoverLink}><FontAwesomeIcon className={styles.menuBullet} icon="circle" /><a href="#">Contact</a></li>
+                <li><a className={styles.hoverLink} href="#"><FontAwesomeIcon className={styles.menuBullet} icon="circle" />Contact</a></li>
             </ul>
         </nav>
     );

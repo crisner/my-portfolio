@@ -16,31 +16,39 @@
     transform: translate(0, -50%);
 }
 
+.menu li {
+    padding: 0.3em 0;
+}
+
 .menu li a {
     color: #E64444;
     text-decoration: none;
     text-anchor: middle;
 }
 
-/* .menu li a:hover {
-    font-weight: 500;
-} */
-
 .hoverLink {
     text-align: left;
-    padding: 0.6em 1em;
+    padding: 0.6em 1em 0.6em 0.8em;
 }
 
-.hoverLink:hover {
+.hoverLink:hover,
+.hoverLink:focus {
     box-shadow: inset 0.5px 1px 2px rgba(0, 0, 0, 0.514);
 }
 
 .bullet {
     font-size: 0.3em;
-    padding: 0 0 0 3.2em;
+    padding: 0 0 0 2.6em;
 }
 
 .menuBullet {
     font-size: 0.5em;
     padding: 0 2em 0 0;
+}
+
+.circle {
+    font-size: 1em;
+    position: relative;
+    right: 1.8em;
+    top: 0.2em;
 }
