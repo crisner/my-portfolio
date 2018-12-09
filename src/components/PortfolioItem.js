@@ -16,7 +16,7 @@ function PortfolioItem(props) {
                 {
                     props.skills.map(skill => {
                         return (
-                            <Pill text={skill} />
+                            <Pill key={skill} text={skill} />
                         );
                     })
                 }
