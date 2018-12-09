@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 import PortfolioItem from '../components/PortfolioItem';
+import styles from './Portfolio.module.css';
+
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
 class Porfolio extends Component {
     state = {
@@ -7,7 +16,7 @@ class Porfolio extends Component {
             {
                 title: 'TODO List',
                 description: 'A simple todo list application made with plainJS.',
-                img: '..\images\crisner.github.io_todo-list_.png',
+                img: images['todo-list.png'],
                 githubLink: '#',
                 demoLink: '#',
                 skills: ['HTML', 'CSS', 'PureJS']
@@ -15,7 +24,7 @@ class Porfolio extends Component {
             {
                 title: 'Pixel Art Maker',
                 description: 'A web application to play with creating pixel art.',
-                img: 'src\images\crisner.github.io_pixel-art-maker_.png',
+                img: images['pixel-art-maker.png'],
                 githubLink: '#',
                 demoLink: '#',
                 skills: ['HTML', 'CSS', 'jQuery']
@@ -23,7 +32,7 @@ class Porfolio extends Component {
             {
                 title: 'RGB Color Game',
                 description: 'A color guessing game from a displayed RGB value.',
-                img: 'src\images\crisner.github.io_color-game_.png',
+                img: images['color-game.png'],
                 githubLink: '#',
                 demoLink: '#',
                 skills: ['HTML', 'CSS', 'PureJS']
@@ -33,7 +42,7 @@ class Porfolio extends Component {
 
     render() {
       return (
-        <div>
+        <div className={styles.position}>
           <h3>Porfolio</h3>
           {
               this.state.portfolio.map(item => {
