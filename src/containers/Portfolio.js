@@ -48,6 +48,7 @@ class Porfolio extends Component {
               this.state.portfolio.map(item => {
                   return (
                     <PortfolioItem
+                    key={item.title}
                     title={item.title}
                     description={item.description}
                     thumbnail={item.img}
