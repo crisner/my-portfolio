@@ -1,0 +1,7 @@
+.position {
+    composes: position from '../components/About.module.css';
+}
+
+.position h3 {
+    text-align: right;
+}
