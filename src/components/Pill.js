@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from './Pill.module.css';
 
 function Pill(props) {
     return (
-        <button title={props.title} className={styles.pill}>
+        <button title={props.title} className={props.styles}>
             {props.text}
         </button>
     );
