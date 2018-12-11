@@ -1,20 +1,21 @@
 .Item {
     display: flex;
     flex-direction: row;
+    width: 75%;
 }
 
 .thumbnail {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 18em;
-    height: 18em;
+    width: 16em;
+    height: 16em;
     margin: 1em 5em 1em 0;
     box-shadow: 1px 1px 2px 1px #2d2727;
 }
 
 .thumbnail img {
-    width: 18em;
+    width: 16em;
 }
 
 .thumbnail .overlay {
@@ -23,13 +24,14 @@
     align-items: center;
     position: absolute;
     background: rgba(230, 68, 68, 0.753);
-    width: 18em;
-    height: 18em;
+    width: 16em;
+    height: 16em;
 }
 
 .thumbnail .links {
     font-size: 1.3em;
     letter-spacing: 0.05em;
+    height: 7.8em;
     position: absolute;
     top: 50%;
     bottom: 0%;
@@ -53,4 +55,24 @@
 .thumbnail svg {
     align-self: center;
     font-size: 2em;
+}
+
+.details h4 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: 0.6em 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.details p {
+    font-size: 1.2em !important;
+}
+
+.details .skills {
+    display: flex;
+}
+
+.pill {
+    composes: pill from './Pill.module.css';
+    font-size: 1em;
 }
