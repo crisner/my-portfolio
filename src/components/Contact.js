@@ -7,9 +7,28 @@ function Contact() {
         <div className={styles.position}>
             <h3>Get in touch</h3>
             <ul className={styles.contact}>
-                <li className={styles.modes}><a href="/"><FontAwesomeIcon className={styles.icons} icon="envelope" /><span className={styles.text}>Send an email</span></a></li>
-                <li className={styles.modes}><a href="/"><FontAwesomeIcon className={styles.icons} icon={['fab', 'linkedin-in']} /><span className={styles.text}>Connect with me</span></a></li>
-                <li className={styles.modes}><a href="/"><FontAwesomeIcon className={styles.icons} icon={['fab', 'github']} /><span className={styles.text}>Find me on Github</span></a></li>
+                <li className={styles.modes}>
+                    <a href="mailto:christie.reni@gmail.com">
+                        <FontAwesomeIcon className={styles.icons} icon="envelope" />
+                        <span className={styles.text}>Send an email</span>
+                    </a>
+                </li>
+                <li className={styles.modes}>
+                    <a rel="noopener noreferrer" 
+                    href="https://www.linkedin.com/in/renishachristie/" 
+                    target="_blank">
+                        <FontAwesomeIcon className={styles.icons} icon={['fab', 'linkedin-in']} />
+                        <span className={styles.text}>Connect with me</span>
+                    </a>
+                </li>
+                <li className={styles.modes}>
+                    <a rel="noopener noreferrer" 
+                    href="https://github.com/crisner" 
+                    target="_blank">
+                        <FontAwesomeIcon className={styles.icons} icon={['fab', 'github']} />
+                        <span className={styles.text}>Find me on Github</span>
+                    </a>
+                </li>
             </ul>
         </div>
     );
