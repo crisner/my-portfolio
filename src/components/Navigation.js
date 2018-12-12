@@ -10,9 +10,21 @@ function Navigation() {
             <header>
                 <img className={styles.logo} src={logo} alt="logo" />
                 <ul className={styles.social}>
-                    <li className={styles.socialIcons}><a href='#'><FontAwesomeIcon icon="envelope" /></a></li>
-                    <li className={styles.socialIcons}><a href='#'><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a></li>
-                    <li className={styles.socialIcons}><a href='#'><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
+                    <li className={styles.socialIcons}>
+                        <a href="mailto:christie.reni@gmail.com">
+                            <FontAwesomeIcon icon="envelope" />
+                        </a>
+                    </li>
+                    <li className={styles.socialIcons}>
+                        <a rel="noopener noreferrer" href="https://www.linkedin.com/in/renishachristie/" target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+                        </a>
+                    </li>
+                    <li className={styles.socialIcons}>
+                        <a rel="noopener noreferrer" href="https://github.com/crisner" target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'github']} />
+                        </a>
+                    </li>
                 </ul>
             </header>
             <Menu />
