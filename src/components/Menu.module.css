@@ -17,7 +17,7 @@
 }
 
 .menu li {
-    padding: 0.3em 0;
+    padding: 0.1em 0;
 }
 
 .menu li a {
@@ -50,6 +50,8 @@
     display: none;
     font-size: 1em;
     position: absolute;
+    top: 0.79em;
+    bottom: 0;
     left: 0.46em;
 }
 
