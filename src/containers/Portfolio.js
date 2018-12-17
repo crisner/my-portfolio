@@ -44,6 +44,7 @@ class Porfolio extends Component {
       return (
         <div className={styles.position}>
           <h3>Porfolio</h3>
+          <div className={styles.portfolioContainer}>
           {
               this.state.portfolio.map(item => {
                   return (
@@ -59,6 +60,7 @@ class Porfolio extends Component {
                   );
               })
           }
+          </div>
         </div>
       );
     }
