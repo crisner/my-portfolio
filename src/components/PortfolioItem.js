@@ -10,7 +10,7 @@ function PortfolioItem(props) {
                 <div className={styles.overlay}>
                     <div className={styles.links}>
                         <a href={props.repo}><span className={styles.circle}><FontAwesomeIcon icon={['fab', 'github-alt']} /></span> Go to repo</a>
-                        <a href={props.live}><span className={styles.circle}><FontAwesomeIcon icon={['fab', 'github-alt']} /></span> View live</a>
+                        <a href={props.live}><span className={styles.circle}><FontAwesomeIcon icon="eye" /></span> View live</a>
                     </div>
                 </div>
                 <img src={props.thumbnail} alt={props.title} />
