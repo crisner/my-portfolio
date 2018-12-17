@@ -20,12 +20,12 @@ body {
 }
 
 .App h3 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 300;
 }
 
 .App p {
-  font-size: 1.4em;
+  font-size: 1.2em;
   letter-spacing: 0.08em;
   line-height: 1.6em;
 }
