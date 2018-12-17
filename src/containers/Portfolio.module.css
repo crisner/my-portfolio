@@ -6,3 +6,7 @@
     text-align: right;
     margin: 0;
 }
+
+.portfolioContainer {
+    height: 75vh;
+}
