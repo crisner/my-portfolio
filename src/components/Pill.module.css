@@ -1,10 +1,11 @@
 .pill {
     color: white;
-    font-size: 1.4em;
+    font-size: 1em;
+    text-transform: uppercase;
     letter-spacing: 0.1em;
     border: none;
     width: 8em;
-    height: 3em;
+    height: 2.6em;
     max-width: 100%;
     background-color: #E64444;
     border-radius: 2em;
