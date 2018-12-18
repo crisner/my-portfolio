@@ -12,7 +12,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navigation />
+        <Route render={(props) => {
+          return (
+            <Navigation location={props} />
+          )
+        }} />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" component={Portfolio} />
