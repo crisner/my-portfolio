@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Menu.module.css';
 
-function Menu() {
+function Menu(props) {
+    const {location} = props.location;
     return (
         <nav className={styles.nav}>
             <ul className={styles.menu}>
@@ -13,7 +14,11 @@ function Menu() {
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
-                        <FontAwesomeIcon className={styles.selected + ' ' + styles.show} icon={['far', 'dot-circle']} />
+                        <FontAwesomeIcon 
+                        className={location.pathname === '/' ? (
+                            styles.selected + ' ' + styles.show
+                         ) : styles.selected} 
+                        icon={['far', 'dot-circle']} />
                         Home
                     </NavLink>
                 </li>
@@ -25,7 +30,11 @@ function Menu() {
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
-                        <FontAwesomeIcon className={styles.selected} icon={['far', 'dot-circle']} />
+                        <FontAwesomeIcon 
+                        className={location.pathname === '/portfolio' ? (
+                            styles.selected + ' ' + styles.show
+                         ) : styles.selected} 
+                        icon={['far', 'dot-circle']} />
                         Portfolio
                     </NavLink>
                 </li>
@@ -37,7 +46,11 @@ function Menu() {
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
-                        <FontAwesomeIcon className={styles.selected} icon={['far', 'dot-circle']} />
+                        <FontAwesomeIcon 
+                        className={location.pathname === '/about' ? (
+                            styles.selected + ' ' + styles.show
+                         ) : styles.selected} 
+                        icon={['far', 'dot-circle']} />
                         About me
                     </NavLink>
                 </li>
@@ -49,7 +62,11 @@ function Menu() {
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
-                        <FontAwesomeIcon className={styles.selected} icon={['far', 'dot-circle']} />
+                        <FontAwesomeIcon 
+                        className={location.pathname === '/contact' ? (
+                            styles.selected + ' ' + styles.show
+                         ) : styles.selected} 
+                        icon={['far', 'dot-circle']} />
                         Contact
                     </NavLink>
                 </li>
