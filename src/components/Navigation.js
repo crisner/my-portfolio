@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Navigation.module.css';
 import Menu from './Menu';
 
-function Navigation() {
+function Navigation(props) {
     return (
         <div>
             <header>
@@ -27,7 +27,7 @@ function Navigation() {
                     </li>
                 </ul>
             </header>
-            <Menu />
+            <Menu location={props.location} />
         </div>
     );
 }
