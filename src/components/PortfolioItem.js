@@ -26,8 +26,20 @@ class PortfolioItem extends Component {
                 <div className={styles.thumbnail}>
                     <div onMouseEnter={this.onHover} onMouseLeave={this.onLeave} className={styles.overlay}>
                         <div className={styles.links}>
-                            <a href={this.props.repo} className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top}><span className={styles.circle}><FontAwesomeIcon icon={['fab', 'github-alt']} /></span> Go to repo</a>
-                            <a href={this.props.live} className={this.state.hover ? styles.bottom + ' ' + styles.bottomOnHover : styles.bottom}><span className={styles.circle}><FontAwesomeIcon icon="eye" /></span> View live</a>
+                            <a href={this.props.repo} 
+                            className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top} 
+                            rel="noopener noreferrer" 
+                            target="_blank">
+                            <span className={styles.circle}>
+                            <FontAwesomeIcon icon={['fab', 'github-alt']} />
+                            </span> Go to repo</a>
+                            <a href={this.props.live} 
+                            className={this.state.hover ? styles.bottom + ' ' + styles.bottomOnHover : styles.bottom} 
+                            rel="noopener noreferrer" 
+                            target="_blank">
+                            <span className={styles.circle}>
+                            <FontAwesomeIcon icon="eye" />
+                            </span> View live</a>
                         </div>
                     </div>
                     <img src={this.props.thumbnail} alt={this.props.title} />
