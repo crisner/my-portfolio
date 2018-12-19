@@ -26,6 +26,13 @@
     background: rgba(230, 68, 68, 0.753);
     width: calc(70vh/3);
     height: calc(70vh/3);
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.4s ease-in;
+}
+
+.thumbnail .overlay:hover {
+    opacity: 1;
 }
 
 .thumbnail .links {
@@ -36,6 +43,36 @@
     top: 50%;
     bottom: 0%;
     transform: translate(0, -50%);
+}
+
+.thumbnail .top {
+    position: relative;
+    bottom: 40%;
+    opacity: 0;
+    transition: bottom 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+                opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.thumbnail .topOnHover {
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.thumbnail .bottom {
+    position: relative;
+    top: 40%;
+    opacity: 0;
+    transition: top 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+                opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.thumbnail .bottomOnHover {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .thumbnail .links a {
