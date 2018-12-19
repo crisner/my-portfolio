@@ -32,8 +32,8 @@ class Porfolio extends Component {
                     title={item.title}
                     description={item.description}
                     thumbnail={images[item.img]}
-                    repo={item.githubLink}
-                    live={item.demoLink}
+                    repo={item.repo}
+                    live={item.live}
                     skills={item.skills}
                     />
                   );
