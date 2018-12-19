@@ -79,6 +79,11 @@
     color: #FFF;
 }
 
+.thumbnail .links a:hover {
+    color: #FFF;
+    font-weight: bold;
+}
+
 .thumbnail .circle {
     display: flex;
     justify-content: space-around;
