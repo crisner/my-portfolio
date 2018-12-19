@@ -6,11 +6,10 @@
 }
 
 .thumbnail {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 16em;
-    height: 16em; */
     margin: 1em 5em 1em 0;
     box-shadow: 1px 1px 2px 1px #2d2727;
 }
@@ -59,7 +58,7 @@
 }
 
 .details h4 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 500;
     margin: 0.6em 0;
     font-family: 'Rubik', sans-serif;
@@ -71,12 +70,12 @@
 
 .details .skills {
     display: flex;
-    margin-top: 3em;
 }
 
 .pill {
     composes: pill from './Pill.module.css';
     font-size: 0.8em;
-    width: 6em;
+    padding: 0 1em;
+    width: auto;
     height: 2.2em;
 }
