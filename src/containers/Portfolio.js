@@ -12,32 +12,7 @@ const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$
 
 class Porfolio extends Component {
     state = {
-        portfolio: [
-            {
-                title: 'TODO List',
-                description: 'A simple todo list application made with plainJS.',
-                img: images['todo-list.png'],
-                githubLink: '#',
-                demoLink: '#',
-                skills: ['HTML', 'CSS', 'PureJS']
-            },
-            {
-                title: 'Pixel Art Maker',
-                description: 'A web application to play with creating pixel art.',
-                img: images['pixel-art-maker.png'],
-                githubLink: '#',
-                demoLink: '#',
-                skills: ['HTML', 'CSS', 'jQuery']
-            },
-            {
-                title: 'RGB Color Game',
-                description: 'A color guessing game from a displayed RGB value.',
-                img: images['color-game.png'],
-                githubLink: '#',
-                demoLink: '#',
-                skills: ['HTML', 'CSS', 'PureJS']
-            }
-        ]
+        portfolio: []
     }
 
     render() {
