@@ -9,6 +9,11 @@ function Navigation(props) {
         <div>
             <header>
                 <img className={styles.logo} src={logo} alt="logo" />
+                <div className={styles.hamburgerIcon}>
+                    <span className={styles.line}></span>
+                    <span className={styles.line}></span>
+                    <span className={styles.line}></span>
+                </div>
                 <ul className={styles.social}>
                     <li className={styles.socialIcons}>
                         <a href="mailto:christie.reni@gmail.com">
