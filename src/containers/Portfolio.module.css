@@ -11,3 +11,28 @@
     height: 75vh;
     overflow-y: hidden;
 }
+
+@media (max-width: 1024px) {
+    .portfolioContainer {
+        width: 100%;
+        max-width: 100%;
+        overflow-y: scroll;
+    }
+
+    .position h3 {
+        text-align: right;
+        margin: 0 0 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .position {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .position {
+        margin-top: 0;
+    }
+}
