@@ -16,6 +16,10 @@
     composes: pill from './Pill.module.css';
 }
 
+.text {
+    width: 80% !important;
+}
+
 p {
     width: 80% !important;
 }
@@ -26,20 +30,34 @@ p {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 0;
+        max-width: 100%;
+        /* margin-top: 0; */
+        /* margin: 0 3em; */
         position: relative;
         top: 0;
         left: 0;
-        transform: translate(0%, 0%);
-    }
-  }
-
-  @media (max-width: 360px) {
-    .position {
-        top: 50%;
+        transform: translate(0, 0);
     }
 
-    .button {
-        margin-top: 1em;
+    p {
+        width: 100% !important;
     }
-  }
+
+    .text {
+        letter-spacing: 0.06em !important;
+        line-height: 1.8em !important;
+    }
+}
+
+@media (max-width: 767px) {   
+}
+
+@media (max-width: 360px) {
+.position {
+    top: 50%;
+}
+
+.button {
+    margin-top: 1em;
+}
+}
