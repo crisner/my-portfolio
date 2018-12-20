@@ -9,7 +9,26 @@
 
 .portfolioContainer {
     height: 75vh;
-    overflow-y: hidden;
+    overflow-y: scroll;
+}
+
+/* Scrollbar style */
+.portfolioContainer::-webkit-scrollbar {
+    width: 0.5em;
+}
+  
+.portfolioContainer::-webkit-scrollbar-track {
+    background: #2f2828;
+    border-radius: 0.5em;
+}
+
+.portfolioContainer::-webkit-scrollbar-thumb {
+    background: #5d4e4e;  
+    border-radius: 0.5em;
+}
+
+.portfolioContainer::-webkit-scrollbar-thumb:hover {
+    background: #f6d4d45c;
 }
 
 @media (max-width: 1024px) {
