@@ -17,3 +17,39 @@ h2 {
     letter-spacing: 0.1em;
     font-family: 'Fira Sans', sans-serif !important;
 }
+
+@media (max-width: 1024px) {
+    .Home {
+        top: 45%;
+        left: 20%;
+        transform: translate(-20%, -45%);
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 4em;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        letter-spacing: 0.1em;
+    }    
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 3em;
+        letter-spacing: 0em;
+        padding: 0 0.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        letter-spacing: 0em;
+        padding: 0 0.5em;
+    }    
+}

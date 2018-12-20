@@ -40,3 +40,18 @@ body {
 .App a:hover {
   color: #F6D4D4;
 }
+
+@media (max-width: 767px) {
+  .App h3 {
+    margin: 0.5em 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .App h3 {
+    margin: 0.5em;
+  }
+  .App p {
+    font-size: 1.05em;
+  }
+}

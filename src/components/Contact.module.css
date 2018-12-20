@@ -34,9 +34,8 @@ a {
     padding-left: 1em;
 }
 
-/* .contactModes {
-    color: #E64444;
-    font-size: 1.4em;
-    letter-spacing: 0.08em;
-    line-height: 1.6em;
-} */
+@media (max-width: 360px) {
+    .contact {
+        font-size: 1.6em;
+    }
+}
