@@ -3,8 +3,8 @@
 }
 
 .position h3 {
-    text-align: right;
-    margin: 0;
+    /* text-align: right; */
+    margin: 0 0 0.5em;
 }
 
 .portfolioContainer {
@@ -35,12 +35,10 @@
     .portfolioContainer {
         width: 100%;
         max-width: 100%;
-        overflow-y: scroll;
     }
 
     .position h3 {
-        text-align: right;
-        margin: 0 0 1em;
+        margin: 0 0 0.5em !important;
     }
 }
 
@@ -53,5 +51,15 @@
 @media (max-width: 480px) {
     .position {
         margin-top: 0;
+    }
+
+    .position h3 {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .portfolioContainer {
+        height: 70vh;
     }
 }
