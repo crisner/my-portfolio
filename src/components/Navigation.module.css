@@ -14,10 +14,7 @@ header {
 }
 
 .hamburgerIcon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em 1.6em 1em;
+    display: none;
 }
 
 .line {
@@ -46,3 +43,16 @@ header {
 .socialIcons a {
     color: #E64444;
 }
+
+@media (max-width: 1024px) {
+    .social {
+        display: none;
+    }
+
+    .hamburgerIcon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em 1.6em 1em;
+    }
+  }
