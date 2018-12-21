@@ -7,7 +7,7 @@
             "img_med": "neighbourhood-map-600x600.png",
             "repo": "https://github.com/crisner/neighbourhood-map",
             "live": "#",
-            "skills": ["ReactJS"]
+            "skills": ["ReactJS", "MaterialUI"]
         },
         {
             "title": "My Reads",
