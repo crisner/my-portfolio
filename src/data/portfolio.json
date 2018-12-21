@@ -3,7 +3,8 @@
         {
             "title": "Neighbourhood Map",
             "description": "A single page map application using React and the React Mapbox-gl. Used Material-UI for React and Zomato's API to gather data. Made the site accessible, responsive and it uses React's service worker for offline availability.",
-            "img": "neighbourhood-map-200x200.png",
+            "img_small": "neighbourhood-map-200x200.png",
+            "img_med": "neighbourhood-map-600x600.png",
             "repo": "https://github.com/crisner/neighbourhood-map",
             "live": "#",
             "skills": ["ReactJS"]
@@ -11,7 +12,8 @@
         {
             "title": "My Reads",
             "description": "A responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.",
-            "img": "my-reads-200x200.png",
+            "img_small": "my-reads-200x200.png",
+            "img_med": "my-reads-600x600.png",
             "repo": "https://github.com/crisner/myreads-react-project",
             "live": "#",
             "skills": ["ReactJS", "Fetch API"]
@@ -19,15 +21,17 @@
         {
             "title": "Arcade Game Clone",
             "description": "A simple arcade game made powered with HTML5 canvas and developed using Object Oriented JavaScript. The game can keep track of scores and lives of the player which is also updated on the screen using canvas elements.",
-            "img": "arcade-game-200x200.png",
+            "img_small": "arcade-game-200x200.png",
+            "img_med": "arcade-game-600x600.png",
             "repo": "https://github.com/crisner/arcade-game",
             "live": "https://crisner.github.io/arcade-game/",
             "skills": ["HTML5 canvas", "JavaScript"]
         },
         {
             "title": "Memory Game",
-            "description": "A browser-based card matching game that tests the player's memory and concentration. The game has features such as three star score system based on the number of moves the player has made upon successfully completing the game and a time tracker. The game also has a score card modal that appears at the end of the game and has the option to reset game at any time.",
-            "img": "memory-game-200x200.png",
+            "description": "A browser-based card matching game that tests the player's memory and concentration. The game uses JavaScript to keep track of scores and JavaScript's event listeners for the user to play the game.",
+            "img_small": "memory-game-200x200.png",
+            "img_med": "memory-game-600x600.png",
             "repo": "https://github.com/crisner/memory-game",
             "live": "https://crisner.github.io/memory-game/",
             "skills": ["HTML", "CSS", "JavaScript"]
@@ -35,7 +39,8 @@
         {
             "title": "Todo List",
             "description": "A simple todo list that runs in the browser and is developed using JavaScript. Used Animate.css library for animations and JSDoc for documentation.",
-            "img": "todo-list-200x200.png",
+            "img_small": "todo-list-200x200.png",
+            "img_med": "todo-list-600x600.png",
             "repo": "https://crisner.github.io/todo-list/",
             "live": "https://github.com/crisner/todo-list",
             "skills": ["HTML", "CSS", "JavaScript"]
@@ -43,7 +48,8 @@
         {
             "title": "Pixel Art Maker",
             "description": "A web application to play with pixel art. It displays a grid size selected by the user which can be painted upon with tools from the displayed toolbox.",
-            "img": "pixel-art-maker-200x200.png",
+            "img_small": "pixel-art-maker-200x200.png",
+            "img_med": "pixel-art-maker-600x600.png",
             "repo": "https://github.com/crisner/pixel-art-maker",
             "live": "https://crisner.github.io/pixel-art-maker/",
             "skills": ["HTML", "CSS", "jQuery"]
@@ -51,7 +57,8 @@
         {
             "title": "Weather App",
             "description": "A weather app that uses Google's geolocation API to find the user's current location and displays current temperature and weather by making use of the Open Weather Map api.",
-            "img": "weather-app-200x200.png",
+            "img_small": "weather-app-200x200.png",
+            "img_med": "weather-app-600x600.png",
             "repo": "https://github.com/crisner/weather-app",
             "live": "https://crisner.github.io/weather-app/",
             "skills": ["HTML", "CSS", "jQuery", "Bootstrap"]
@@ -59,7 +66,8 @@
         {
             "title": "Wikipedia Viewer",
             "description": "Uses the Wikipedia API to filter and display search results from Wikipedia for the query entered by the user.",
-            "img": "wikipedia-viewer-200x200.png",
+            "img_small": "wikipedia-viewer-200x200.png",
+            "img_med": "wikipedia-viewer-600x600.png",
             "repo": "https://github.com/crisner/wikipedia-viewer",
             "live": "https://crisner.github.io/wikipedia-viewer/",
             "skills": ["HTML", "CSS", "jQuery", "CSS Grid"]
