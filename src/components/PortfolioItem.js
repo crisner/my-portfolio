@@ -42,7 +42,14 @@ class PortfolioItem extends Component {
                             </span> View live</a>
                         </div>
                     </div>
-                    <img src={this.props.thumbnail} alt={this.props.title} />
+                    <img
+                    srcSet={`${this.props.thumbnailSmall} 200w,
+                    ${this.props.thumbnailMed} 400w,
+                    ${this.props.thumbnailLg} 600w `}
+                    sizes="(max-width: 480px) 200px,
+                            (max-width: 1024px) 400px,
+                            (min-width: 1025px) 600px"
+                    src={this.props.thumbnailSmall} alt={this.props.title} />
                     
                 </div>
                 <div className={styles.details}>

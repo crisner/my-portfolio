@@ -31,7 +31,9 @@ class Porfolio extends Component {
                     key={item.title}
                     title={item.title}
                     description={item.description}
-                    thumbnail={images[item.img]}
+                    thumbnailSmall={images[item.img_small]}
+                    thumbnailMed={images[item.img_med]}
+                    thumbnailLg={images[item.img_lg]}
                     repo={item.repo}
                     live={item.live}
                     skills={item.skills}
