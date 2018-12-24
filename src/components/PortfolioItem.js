@@ -3,10 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Pill from './Pill';
 import styles from './PortfolioItem.module.css';
 
-// let onHover = () => {
-//     console.log('hovered');
-// }
-
 class PortfolioItem extends Component {
     state = {
         hover: false
@@ -20,14 +16,13 @@ class PortfolioItem extends Component {
         this.setState({ hover: false });
     }
     render() {
-        console.log(this.state.hover);
         return (
             <div className={styles.Item}>
                 <div className={styles.thumbnail}>
                     <div onMouseEnter={this.onHover} onMouseLeave={this.onLeave} className={styles.overlay}>
                         <div className={styles.links}>
                             <a href={this.props.repo} 
-                            className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top} 
+                            className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top}
                             rel="noopener noreferrer" 
                             target="_blank">
                             <span className={styles.circle}>
@@ -50,7 +45,7 @@ class PortfolioItem extends Component {
                             (max-width: 1024px) 400px,
                             (min-width: 1025px) 600px"
                     src={this.props.thumbnailSmall} alt={this.props.title} />
-                    
+                    <div className={styles.mouseOver} title="Roll mouse over image">Hover</div>
                 </div>
                 <div className={styles.details}>
                     <h4>{this.props.title}</h4>
