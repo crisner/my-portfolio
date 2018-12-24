@@ -13,8 +13,12 @@ function About() {
             them. This is also why got into coding. I find happiness in building something
             interactive with code.</p>
             <div className={styles.button}>
-                <Pill styles={styles.pill} title="Download my resume" text="Resume" />
-                <Pill styles={styles.pill} title="Read my blog" text="Blog" />
+                <a href="https://docs.google.com/document/d/1DEdnq5yemwshfaQXAB6T9YpgAtF_tRHb2Q-kYHL6LWY/edit?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank">
+                    <Pill styles={styles.pill} title="Download my resume" text="Resume" />
+                </a>
+                {/* <Pill styles={styles.pill} title="Read my blog" text="Blog" /> */}
             </div>
         </div>
     );
