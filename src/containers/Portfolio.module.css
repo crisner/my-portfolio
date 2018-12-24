@@ -8,6 +8,7 @@
 }
 
 .portfolioContainer {
+    width: 90%;
     height: 75vh;
     overflow-y: scroll;
 }
