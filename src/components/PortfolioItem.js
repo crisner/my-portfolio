@@ -15,11 +15,15 @@ class PortfolioItem extends Component {
     onLeave = () => {
         this.setState({ hover: false });
     }
+    onClick = () => {
+        this.setState({ hover: !this.state.hover });
+    }
+    
     render() {
         return (
             <div className={styles.Item}>
                 <div className={styles.thumbnail}>
-                    <div onMouseEnter={this.onHover} onMouseLeave={this.onLeave} className={styles.overlay}>
+                    <div onMouseEnter={this.onHover} onMouseLeave={this.onLeave} className={this.state.hover ? styles.overlay + ' ' + styles.overlayOnHover : styles.overlay}>
                         <div className={styles.links}>
                             <a href={this.props.repo} 
                             className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top}
@@ -45,7 +49,11 @@ class PortfolioItem extends Component {
                             (max-width: 1024px) 400px,
                             (min-width: 1025px) 600px"
                     src={this.props.thumbnailSmall} alt={this.props.title} />
-                    <div className={styles.mouseOver} title="Roll mouse over image">Hover</div>
+                    <FontAwesomeIcon 
+                    className={styles.mouseOver} 
+                    onClick={this.onClick}
+                    title="Roll mouse over image" 
+                    icon="link" />
                 </div>
                 <div className={styles.details}>
                     <h4>{this.props.title}</h4>

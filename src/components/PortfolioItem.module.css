@@ -6,6 +6,7 @@
 }
 
 .thumbnail {
+    width: min-content;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,19 +20,24 @@
 }
 
 .thumbnail .mouseOver {
-    color: #e64444;
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 0.14em 0;
+    color: #ffffff;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    padding: 3%;
     background: #393030e8;
-    text-align: center;
     position: relative;
-    top: -17%;
-    left: 0%;
+    top: -25%;
+    left: 60%;
     bottom: 0;
-    transform: translate(0, 17%);
+    box-shadow: 1px 1px 1px 1px #2d2727;
+    transform: translate(-60%, 25%);
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.thumbnail .mouseOver:hover {
+    background: #E64444;
+    transform: translate(-60%, 25%) scale(1.4);
 }
 
 .thumbnail .overlay {
@@ -45,10 +51,9 @@
     opacity: 0;
     cursor: pointer;
     transition: opacity 0.4s ease-in;
-    z-index: 1;
 }
 
-.thumbnail .overlay:hover {
+.thumbnail .overlayOnHover {
     opacity: 1;
 }
 
