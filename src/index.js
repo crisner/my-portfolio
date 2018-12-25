@@ -4,12 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faGithub, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faCircle, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faCircle, faEye, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faDotCircle } from '@fortawesome/free-regular-svg-icons';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 
-library.add(faLinkedinIn, faGithub, faGithubAlt, faEnvelope, faCircle, faEye, faDotCircle);
+library.add(faLinkedinIn, faGithub, faGithubAlt, faEnvelope, faCircle, faEye, faLink, faDotCircle);
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
