@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <CSSTransition
+        <CSSTransition
         in={true}
         appear={true}
         timeout={600}
