@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
+import PageAnimation from '../components/PageAnimation';
 import Home from '../components/Home';
 import About from '../components/About';
 import Contact from '../components/Contact';
@@ -24,19 +25,15 @@ class App extends Component {
             )
           }} />
         </CSSTransition>
-        <CSSTransition
-        in={true}
-        appear={true}
-        timeout={600}
-        classNames="fade">
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route component={Home} />
-          </Switch>
-        </CSSTransition>
+      
+        <Switch>
+          <Route path="/" exact component={PageAnimation(Home)} />
+          <Route path="/portfolio" component={PageAnimation(Portfolio)} />
+          <Route path="/about" component={PageAnimation(About)} />
+          <Route path="/contact" component={PageAnimation(Contact)} />
+          <Route component={PageAnimation(Home)} />
+        </Switch>
+        
         <CSSTransition
         in={true}
         appear={true}
