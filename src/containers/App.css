@@ -41,6 +41,40 @@ body {
   color: #F6D4D4;
 }
 
+/* On page load */
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+/* Animate in */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms linear;
+}
+
+/* Animate out */
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 600ms linear;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
 @media (max-width: 767px) {
   .App h3 {
     margin: 0.5em 0;
