@@ -6,7 +6,7 @@ const PageAnimation = Page => {
     <CSSTransition
     in={true}
     appear={true}
-    timeout={600}
+    timeout={300}
     classNames="fade">
         <Page {...props} />
     </CSSTransition>
