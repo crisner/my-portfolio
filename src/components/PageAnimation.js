@@ -3,7 +3,6 @@ import { CSSTransition } from 'react-transition-group';
 
 const PageAnimation = Page => {
   return props =>
-    // <div className="page">
     <CSSTransition
     in={true}
     appear={true}
@@ -11,7 +10,6 @@ const PageAnimation = Page => {
     classNames="fade">
         <Page {...props} />
     </CSSTransition>
-    {/* </div>; */}
 };
 
 export default PageAnimation;
