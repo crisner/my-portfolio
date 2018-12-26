@@ -13,7 +13,7 @@ function About() {
             them. This is also why got into coding. I find happiness in building something
             interactive with code.</p>
             <div className={styles.button}>
-                <a href="https://docs.google.com/document/d/1DEdnq5yemwshfaQXAB6T9YpgAtF_tRHb2Q-kYHL6LWY/edit?usp=sharing"
+                <a href="https://drive.google.com/open?id=1433_w5W7dJQkfkutujLcXV4rKWu21eeJ"
                 rel="noopener noreferrer"
                 target="_blank">
                     <Pill styles={styles.pill} title="Download my resume" text="Resume" />
