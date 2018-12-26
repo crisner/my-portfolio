@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styles from './MobileMenu.module.css';
 
 function MobileMenu(props) {
-    // const {location} = props.location;
     return (
         <nav className={styles.nav}>
             <ul className={styles.menu}>
