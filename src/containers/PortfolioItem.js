@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Pill from './Pill';
+import Pill from '../components/Pill';
 import styles from './PortfolioItem.module.css';
 
 class PortfolioItem extends Component {

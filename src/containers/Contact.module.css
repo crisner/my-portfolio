@@ -1,5 +1,5 @@
 .position {
-    composes: position from './About.module.css';
+    composes: position from '../components/About.module.css';
 }
 
 .contact {

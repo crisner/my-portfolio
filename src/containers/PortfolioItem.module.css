@@ -138,7 +138,7 @@
 }
 
 .pill {
-    composes: pill from './Pill.module.css';
+    composes: pill from '../components/Pill.module.css';
     font-size: 0.8em;
     padding: 0 1em;
     width: auto;

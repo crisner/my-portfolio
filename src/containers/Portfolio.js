@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PortfolioItem from '../components/PortfolioItem';
+import PortfolioItem from './PortfolioItem';
 import data from '../data/portfolio.json';
 import styles from './Portfolio.module.css';
 

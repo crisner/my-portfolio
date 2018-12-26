@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from '../images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Navigation.module.css';
-import Menu from './Menu';
-import MobileMenu from './MobileMenu';
+import Menu from '../components/Menu';
+import MobileMenu from '../components/MobileMenu';
 
 class Navigation extends Component {
     state = {
