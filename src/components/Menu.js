@@ -8,14 +8,17 @@ function Menu(props) {
     return (
         <nav className={styles.nav}>
             <ul className={styles.menu}>
-                <li>
-                    <NavLink exact to="/" className={styles.hoverLink}
+                <li 
+                id="Home" 
+                onMouseEnter={(e) => props.onHover(e)} 
+                onMouseLeave={props.onLeave}>
+                    <NavLink id="Home" exact to="/" className={styles.hoverLink}
                     activeStyle={{
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
                         <FontAwesomeIcon 
-                        className={location.pathname === '/' ? (
+                        className={location.pathname === '/' || props.hover === "Home" ? (
                             styles.selected + ' ' + styles.show
                          ) : styles.selected} 
                         icon={['far', 'dot-circle']} />
@@ -24,14 +27,17 @@ function Menu(props) {
                 </li>
                 <li><FontAwesomeIcon className={styles.bullet} icon="circle" /></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
-                <li>
-                    <NavLink to="/portfolio" className={styles.hoverLink}
+                <li
+                id="Portfolio" 
+                onMouseEnter={(e) => props.onHover(e)} 
+                onMouseLeave={props.onLeave}>
+                    <NavLink id="Portfolio" to="/portfolio" className={styles.hoverLink}
                     activeStyle={{
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
                         <FontAwesomeIcon 
-                        className={location.pathname === '/portfolio' ? (
+                        className={location.pathname === '/portfolio' || props.hover === "Portfolio" ? (
                             styles.selected + ' ' + styles.show
                          ) : styles.selected} 
                         icon={['far', 'dot-circle']} />
@@ -40,14 +46,17 @@ function Menu(props) {
                 </li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
-                <li>
-                    <NavLink to="/about" className={styles.hoverLink} 
+                <li
+                id="About" 
+                onMouseEnter={(e) => props.onHover(e)} 
+                onMouseLeave={props.onLeave}>
+                    <NavLink id="About" to="/about" className={styles.hoverLink} 
                     activeStyle={{
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
                         <FontAwesomeIcon 
-                        className={location.pathname === '/about' ? (
+                        className={location.pathname === '/about' || props.hover === "About" ? (
                             styles.selected + ' ' + styles.show
                          ) : styles.selected} 
                         icon={['far', 'dot-circle']} />
@@ -56,14 +65,17 @@ function Menu(props) {
                 </li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
                 <li><FontAwesomeIcon  className={styles.bullet} icon="circle" /></li>
-                <li>
-                    <NavLink to="/contact" className={styles.hoverLink} 
+                <li
+                id="Contact" 
+                onMouseEnter={(e) => props.onHover(e)} 
+                onMouseLeave={props.onLeave}>
+                    <NavLink id="Contact" to="/contact" className={styles.hoverLink} 
                     activeStyle={{
                         boxShadow: "inset 0.5px 1px 2px rgba(0, 0, 0, 0.514)"
                     }}>
                         <FontAwesomeIcon  className={styles.menuBullet} icon="circle" />
                         <FontAwesomeIcon 
-                        className={location.pathname === '/contact' ? (
+                        className={location.pathname === '/contact'|| props.hover === "Contact" ? (
                             styles.selected + ' ' + styles.show
                          ) : styles.selected} 
                         icon={['far', 'dot-circle']} />

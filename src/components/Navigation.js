@@ -7,14 +7,22 @@ import MobileMenu from './MobileMenu';
 
 class Navigation extends Component {
     state = {
-        open: false
+        open: false,
+        hover: null
+    }
+
+    onHover = (e) => {
+        this.setState({ hover: e.target.id });
+    }
+
+    onLeave = () => {
+        this.setState({ hover: null });
     }
 
     expandMenu = () => {
         this.setState({ open: !this.state.open })
     }
     render() {
-        console.log(this.state.open);
         return (
             <div>
                 <header>
@@ -46,7 +54,11 @@ class Navigation extends Component {
                 {
                     this.state.open ? <MobileMenu location={this.props.location} expandMenu={this.expandMenu.bind(this)} /> : null
                 }
-                <Menu location={this.props.location} />
+                <Menu 
+                location={this.props.location}
+                hover={this.state.hover}
+                onHover={this.onHover.bind(this)}
+                onLeave={this.onLeave.bind(this)} />
             </div>
         );
     }
