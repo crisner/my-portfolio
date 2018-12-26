@@ -37,10 +37,6 @@ body {
   text-decoration: none;
 }
 
-.App a:hover {
-  color: #F6D4D4;
-}
-
 /* On page load */
 .fade-appear {
   opacity: 0;
