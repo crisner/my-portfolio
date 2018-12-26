@@ -26,8 +26,6 @@ body {
 
 .App p {
   font-size: 1.2em;
-  /* letter-spacing: 0.08em;
-  line-height: 1.6em; */
   letter-spacing: 0.03em;
   line-height: 1.5em;
 }
