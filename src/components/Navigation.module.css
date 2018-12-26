@@ -39,6 +39,12 @@ header {
 .socialIcons {
     font-size: 1.6em;
     padding: 0 0.6em;
+    transform: scale(1);
+}
+
+.socialIcons:hover {
+    transform: scale(1.5);
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .socialIcons a {
