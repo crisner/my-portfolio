@@ -16,7 +16,7 @@ class Contact extends Component {
     render() {
         return (
             <div className={styles.position}>
-                <h3>Get in touch</h3>
+                <h3 tabIndex="0">Get in touch</h3>
                 <ul className={styles.contact}>
                     <li className={styles.modes}>
                         <a
