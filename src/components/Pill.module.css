@@ -14,4 +14,5 @@
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
     margin: 1em 1em 1em 0;
+    -webkit-appearance: none;
 }
