@@ -1,5 +1,4 @@
 import React from 'react';
-import Pill from './Pill';
 import styles from './About.module.css';
 
 function About() {
