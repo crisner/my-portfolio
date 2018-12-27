@@ -11,6 +11,7 @@
     border-radius: 2em;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
     margin: 1em 1em 1em 0;
