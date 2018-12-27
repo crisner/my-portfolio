@@ -46,8 +46,8 @@
             "img_small": "todo-list-200x200.png",
             "img_med": "todo-list-400x400.png",
             "img_lg": "todo-list-600x600.png",
-            "repo": "https://crisner.github.io/todo-list/",
-            "live": "https://github.com/crisner/todo-list",
+            "repo": "https://github.com/crisner/todo-list",
+            "live": "https://crisner.github.io/todo-list/",
             "skills": ["HTML", "CSS", "JavaScript"]
         },
         {
