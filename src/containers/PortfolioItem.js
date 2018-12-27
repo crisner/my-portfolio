@@ -8,13 +8,13 @@ class PortfolioItem extends Component {
         hover: false
     }
     
-    onHover = () => {
-        this.setState({ hover: true });
+    // onHover = () => {
+    //     this.setState({ hover: true });
         
-    }
-    onLeave = () => {
-        this.setState({ hover: false });
-    }
+    // }
+    // onLeave = () => {
+    //     this.setState({ hover: false });
+    // }
     onClick = () => {
         this.setState({ hover: !this.state.hover });
     }
@@ -23,7 +23,10 @@ class PortfolioItem extends Component {
         return (
             <div tabIndex="0" className={styles.Item}>
                 <div className={styles.thumbnail}>
-                    <div onMouseEnter={this.onHover} onMouseLeave={this.onLeave} className={this.state.hover ? styles.overlay + ' ' + styles.overlayOnHover : styles.overlay}>
+                    <div 
+                    // onMouseEnter={this.onHover} 
+                    // onMouseLeave={this.onLeave} 
+                    className={this.state.hover ? styles.overlay + ' ' + styles.overlayOnHover : styles.overlay}>
                         <div className={styles.links}>
                             <a tabIndex="0" href={this.props.repo} 
                             className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top}
