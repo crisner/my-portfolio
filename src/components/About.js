@@ -12,13 +12,14 @@ function About() {
             <p tabIndex="0" className={styles.text}>I am fascinated by languages and love finding similarities between them and learning
             them. I find happiness in building something
             interactive with code.</p>
-            <div className={styles.button}>
-                <a href="https://drive.google.com/open?id=1433_w5W7dJQkfkutujLcXV4rKWu21eeJ"
+            <div className={styles.button + styles.pill}>
+                <a className={styles.buttonLink} 
+                role="button"
+                title="Download my resume"
+                href="https://drive.google.com/open?id=1433_w5W7dJQkfkutujLcXV4rKWu21eeJ"
                 rel="noopener noreferrer"
-                target="_blank">
-                    <Pill styles={styles.pill} title="Download my resume" text="Resume" />
+                target="_blank">Resume
                 </a>
-                {/* <Pill styles={styles.pill} title="Read my blog" text="Blog" /> */}
             </div>
         </div>
     );
