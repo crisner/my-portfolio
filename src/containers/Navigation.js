@@ -26,7 +26,7 @@ class Navigation extends Component {
         return (
             <div>
                 <header>
-                    <img tabIndex="0" className={styles.logo} src={logo} alt="logo" />
+                    <img className={styles.logo} src={logo} alt="logo" />
                     <div className={styles.hamburgerIcon} 
                     onClick={this.expandMenu}>
                         <span className={styles.line}></span>

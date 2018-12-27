@@ -22,8 +22,8 @@ class Porfolio extends Component {
     render() {
       return (
         <div className={styles.position}>
-          <h3 tabIndex="0">Porfolio</h3>
-          <div tabIndex="0" className={styles.portfolioContainer}>
+          <h3>Porfolio</h3>
+          <div className={styles.portfolioContainer}>
           {
               this.state.portfolio.map(item => {
                   return (

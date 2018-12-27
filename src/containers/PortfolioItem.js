@@ -21,21 +21,21 @@ class PortfolioItem extends Component {
     
     render() {
         return (
-            <div tabIndex="0" className={styles.Item}>
+            <div className={styles.Item}>
                 <div className={styles.thumbnail}>
                     <div 
                     // onMouseEnter={this.onHover} 
                     // onMouseLeave={this.onLeave} 
                     className={this.state.hover ? styles.overlay + ' ' + styles.overlayOnHover : styles.overlay}>
                         <div className={styles.links}>
-                            <a tabIndex="0" href={this.props.repo} 
+                            <a href={this.props.repo} 
                             className={this.state.hover ? styles.top + ' ' + styles.topOnHover : styles.top}
                             rel="noopener noreferrer" 
                             target="_blank">
                             <span className={styles.circle}>
                             <FontAwesomeIcon icon={['fab', 'github-alt']} />
                             </span> Go to repo</a>
-                            <a tabIndex="0" href={this.props.live} 
+                            <a href={this.props.live} 
                             className={this.state.hover ? styles.bottom + ' ' + styles.bottomOnHover : styles.bottom} 
                             rel="noopener noreferrer" 
                             target="_blank">
@@ -45,7 +45,6 @@ class PortfolioItem extends Component {
                         </div>
                     </div>
                     <img
-                    tabIndex="0"
                     srcSet={`${this.props.thumbnailSmall} 200w,
                     ${this.props.thumbnailMed} 400w,
                     ${this.props.thumbnailLg} 600w `}
@@ -54,15 +53,14 @@ class PortfolioItem extends Component {
                             (min-width: 1025px) 600px"
                     src={this.props.thumbnailSmall} alt={this.props.title} />
                     <FontAwesomeIcon 
-                    tabIndex="0"
                     className={styles.mouseOver} 
                     onClick={this.onClick}
                     title="Roll mouse over image" 
                     icon="link" />
                 </div>
-                <div tabIndex="0" className={styles.details}>
-                    <h4 tabIndex="0">{this.props.title}</h4>
-                    <p tabIndex="0">{this.props.description}</p>
+                <div className={styles.details}>
+                    <h4 >{this.props.title}</h4>
+                    <p >{this.props.description}</p>
                     <div className={styles.skills}>
                     {
                         this.props.skills.map(skill => {
