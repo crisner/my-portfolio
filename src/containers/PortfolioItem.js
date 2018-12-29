@@ -55,7 +55,7 @@ class PortfolioItem extends Component {
                     <FontAwesomeIcon 
                     className={styles.mouseOver} 
                     onClick={this.onClick}
-                    title="Roll mouse over image" 
+                    title="Click for project links" 
                     icon="link" />
                 </div>
                 <div className={styles.details}>
