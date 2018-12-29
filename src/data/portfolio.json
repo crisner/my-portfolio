@@ -2,7 +2,7 @@
     "portfolio": [
         {
             "title": "Neighbourhood Map",
-            "description": "A single page map application using React and React Mapbox-gl. Used Material-UI for React and Zomato's API to gather data. Made the site accessible, responsive and it uses React's service worker for offline availability.",
+            "description": "A single page map application using React and Mapbox. Used Material-UI for React and Zomato's API to gather data. Made the site accessible, responsive and it uses React's service worker for offline availability.",
             "img_small": "neighbourhood-map-200x200.png",
             "img_med": "neighbourhood-map-400x400.png",
             "img_lg": "neighbourhood-map-600x600.png",
@@ -12,7 +12,7 @@
         },
         {
             "title": "My Reads",
-            "description": "A responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library. Used debounce to filter query.",
+            "description": "A responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.",
             "img_small": "my-reads-200x200.png",
             "img_med": "my-reads-400x400.png",
             "img_lg": "my-reads-600x600.png",
