@@ -1,6 +1,16 @@
 {
     "portfolio": [
         {
+            "title": "Phoenix Architecture",
+            "description": "A responsive static website for an architecture firm made with GatsbyJS. Used GraphQL to query data from the local file system as well as from youtube api",
+            "img_small": "phoenix-architecture-200x200.png",
+            "img_med": "phoenix-architecture-400x400.png",
+            "img_lg": "phoenix-architecture-600x600.png",
+            "repo": "https://github.com/crisner/phoenix-architecture",
+            "live": "https://www.phoenixarchitecture.in/",
+            "skills": ["GatsbyJS", "GraphQL", "Bootstrap", "SASS"]
+        },
+        {
             "title": "Neighbourhood Map",
             "description": "A single page map application using React and Mapbox. Used Material-UI for React and Zomato's API to gather data. Made the site accessible, responsive and it uses React's service worker for offline availability.",
             "img_small": "neighbourhood-map-200x200.png",
