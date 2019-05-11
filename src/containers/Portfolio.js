@@ -22,7 +22,7 @@ class Porfolio extends Component {
     render() {
       return (
         <div className={styles.position}>
-          <h3>Porfolio</h3>
+          <h3>Portfolio</h3>
           <div className={styles.portfolioContainer}>
           {
               this.state.portfolio.map(item => {
