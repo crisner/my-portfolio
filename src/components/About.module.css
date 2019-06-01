@@ -1,22 +1,24 @@
 .position {
     width: 70%;
-    margin-top: 6em;
+    /* margin-top: 12em; */
     position: absolute;
-    top: 0%;
+    top: 20%;
     left: 45%;
     transform: translate(-45%, 0%);
 }
 
-.button {
+/* .button {
     display: flex;
     margin-top: 4em;
-}
+} */
 
 .buttonLink {
     color: white !important;
 }
 
 .pill {
+    display: flex;
+    margin-top: 4em;
     composes: pill from './Pill.module.css';
 }
 

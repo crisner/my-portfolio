@@ -1,4 +1,5 @@
 .position {
+    top: 10%;
     composes: position from '../components/About.module.css';
 }
 
