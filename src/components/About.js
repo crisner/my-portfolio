@@ -11,7 +11,7 @@ function About() {
             <p className={styles.text}>I am fascinated by languages and love finding similarities between them and learning
             them. I find happiness in building something
             interactive with code.</p>
-            <div className={styles.button + styles.pill}>
+            <div className={styles.pill}>
                 <a className={styles.buttonLink} 
                 role="button"
                 title="Download my resume"
