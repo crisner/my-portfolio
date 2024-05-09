@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background-color: #372929;
+  /* --background-color: #372929; */
+  --background-color: #251c1c;
   --text-color: #f6f1f1;
   --accent-color: #fa6379;
 }
@@ -13,3 +14,6 @@ body {
   background: var(--background-color);
 }
 
+.icon-color-light {
+  color: var(--text-color);
+}
