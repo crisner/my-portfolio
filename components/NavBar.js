@@ -15,7 +15,7 @@ const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <nav
-      className="mx-auto flex items-center justify-between p-4 lg:px-8"
+      className="mx-auto flex items-center justify-between p-4 lg:px-8 fixed z-10 top-0"
       aria-label="Global"
     >
       <div className="flex">

@@ -14,6 +14,14 @@ body {
   background: var(--background-color);
 }
 
+nav {
+  background: var(--background-color);
+}
+
 .icon-color-light {
   color: var(--text-color);
+}
+
+main {
+  margin-top: 68px;
 }
