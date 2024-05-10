@@ -18,10 +18,18 @@ nav {
   background: var(--background-color);
 }
 
-.icon-color-light {
+.icon-color-light, .link-text {
   color: var(--text-color);
+}
+
+.link-text:hover {
+  text-decoration: underline;
 }
 
 main {
   margin-top: 68px;
+}
+
+svg {
+  fill: var(--text-color);
 }
