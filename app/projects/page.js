@@ -6,7 +6,8 @@ import {
 import Badge from "@/components/Badge";
 import GithubIcon from "@/components/icons/GithubIcon";
 import Image from "next/image";
-import collabEarth from "@/public/images/main_collab_earth.png";
+import collabEarth from "@/public/images/collabearth.png";
+import cookies from "@/public/images/cookies.jpg";
 import ProjectItem from "@/components/ProjectItem";
 
 export default function Projects() {
@@ -60,7 +61,7 @@ export default function Projects() {
           <ProjectItem
             title="Cookies - E-commerce website"
             description="This is an E-commerce website using the MERN stack with Redux for state management. TypeScript with React was employed for type-checking, enhancing front-end stability. I established a REST API with Express.js for CRUD operations and implemented authentication and session persistence using Passport.js."
-            image={collabEarth}
+            image={cookies}
             imageAlt="E-commerce project"
             link="https://github.com/crisner/cookies-e-commerce-website"
             year="2020"

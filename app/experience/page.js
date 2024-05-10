@@ -50,7 +50,7 @@ export default function WorkExperience() {
               <Badge>Figma</Badge>
             </div>
           </li>
-          <li className="py-5 bg-[#3f3030] p-12 rounded-lg">
+          <li className="py-5 mb-10 bg-[#3f3030] p-12 rounded-lg">
             <p className="flex flex-wrap justify-between items-center w-full">
               <span className="text-lg font-semibold leading-6">
                 Frontend Developer, Remote (Delhi, India) - Reqip{" "}
@@ -83,6 +83,23 @@ export default function WorkExperience() {
               <Badge>Redux Toolkit</Badge>
               <Badge>RTK Query</Badge>
               <Badge>Ant Design</Badge>
+              <Badge>SASS</Badge>
+            </div>
+          </li>
+          <li className="py-5 bg-[#3f3030] p-12 rounded-lg">
+            <p className="flex flex-wrap justify-between items-center w-full">
+              <span className="text-lg font-semibold leading-6">
+                Web Developer, Freelancer{" "}
+              </span>
+              <span className="text-sm">2019</span>
+            </p>
+            <p className="text-base text-stone-400 mt-4">
+            I developed a responsive static website for an architecture firm using GatsbyJS, a modern framework for building fast websites. I also leveraged GraphQL to seamlessly query data from both the local file system and the YouTube API, enabling dynamic content integration and enhanced user experience. The website showcases the firm's portfolio, services, and projects in a visually appealing and accessible manner, catering to diverse audiences across various devices. By utilizing GatsbyJS and GraphQL, the website delivers optimal performance and scalability while offering seamless content management capabilities.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-3">
+              <Badge>GatsbyJS</Badge>
+              <Badge>GraphQL</Badge>
+              <Badge>Bootstrap</Badge>
               <Badge>SASS</Badge>
             </div>
           </li>
