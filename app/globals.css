@@ -30,6 +30,6 @@ main {
   margin-top: 68px;
 }
 
-svg {
+.social-icon {
   fill: var(--text-color);
 }

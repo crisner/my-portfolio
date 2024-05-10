@@ -1,15 +1,16 @@
-.nav_item {
+.nav_item, .link_icon {
   text-decoration: none;
   position: relative;
   bottom: -1px;
 }
 
+.link_icon:hover:after,
 .nav_item:hover:after,
 .nav_item:active:after,
 .nav_item:focus:after,
 .active:after {
   content: "";
-  width: 35%;
+  width: 40%;
   position: absolute;
   left: 50%;
   bottom: -6px;
