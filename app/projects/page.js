@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <main className="mx-auto max-w-7xl px-4 lg:px-20 py-24">
       <section className="mx-auto lg:mx-0 relative left-full -translate-x-full">
-        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+        <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
           Side Projects
         </h2>
         <ul role="list" className="mt-10">
@@ -43,6 +43,7 @@ export default function Projects() {
               </>
             }
             image={collabEarth}
+            imageAlt="Project collab earth"
             link="https://github.com/crisner/collab-earth"
             year="Present"
             skills={[
@@ -60,6 +61,7 @@ export default function Projects() {
             title="Cookies - E-commerce website"
             description="This is an E-commerce website using the MERN stack with Redux for state management. TypeScript with React was employed for type-checking, enhancing front-end stability. I established a REST API with Express.js for CRUD operations and implemented authentication and session persistence using Passport.js."
             image={collabEarth}
+            imageAlt="E-commerce project"
             link="https://github.com/crisner/cookies-e-commerce-website"
             year="2020"
             skills={[
@@ -76,7 +78,7 @@ export default function Projects() {
         </ul>
       </section>
       <section className="mx-auto lg:mx-0 relative left-full -translate-x-full mt-20">
-        <h3 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
+        <h3 className="text-3xl font-bold tracking-tight sm:text-5xl">
           Older Projects
         </h3>
         <ul role="list" className="mt-10">

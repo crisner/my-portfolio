@@ -6,7 +6,7 @@ export default function Home() {
     <main className="mx-auto max-w-7xl px-4 lg:px-20 py-24">
       <div>
         <section className="mx-auto max-w-3xl lg:mx-0 mt-24">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Hi, I'm Renisha Christie!
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">

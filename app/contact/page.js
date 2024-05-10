@@ -19,7 +19,7 @@ export default function Contact() {
             virtual coffee to chat about your projects, I'm here and eager to
             connect. Feel free to reach out to me on any of the platforms below!
           </p>
-          <div className="flex lg:gap-x-12 justify-center mt-10">
+          <div className="flex gap-x-6 lg:gap-x-12 justify-center mt-10">
             <Link href="mailto:christie.reni@gmail.com">
               <EnvelopeIcon className="h-8 w-8" />
             </Link>

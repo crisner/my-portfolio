@@ -1,4 +1,5 @@
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { ArrowUpRightIcon, ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default async function Blog() {
   const variables = { host: process.env.HASHNODE_HOST };
@@ -89,6 +90,10 @@ export default async function Blog() {
             </article>
           ))}
         </div>
+        <Link href="/" className="flex items-center gap-2 mt-16">
+            <small>Go to home page</small>
+            <ArrowLongRightIcon className="h-6 w-6" />
+          </Link>
       </section>
     </main>
   );

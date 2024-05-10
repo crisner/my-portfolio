@@ -7,6 +7,7 @@ const ProjectItem = ({
   title,
   description,
   image,
+  imageAlt='',
   link,
   year,
   skills = [],
@@ -25,8 +26,8 @@ const ProjectItem = ({
         {year && <span className="text-sm">{year}</span>}
       </p>
       <div className="flex flex-wrap gap-2 justify-between  mt-4">
-        <p className={`${image ? 'w-4/6 ' : ''}text-base text-stone-400`}>{description}</p>
-        {image && <Image src={image} height={150} />}
+        {image && <Image src={image} height={150} alt={imageAlt} />}
+        <p className={`${image ? 'xl:w-4/6 ' : ''}text-base text-stone-400`}>{description}</p>
       </div>
       <div className="flex flex-wrap gap-2 mt-3">
         {skills.map((skill) => (

@@ -6,12 +6,12 @@ export default function WorkExperience() {
   return (
     <main className="mx-auto max-w-7xl px-4 lg:px-20 py-24">
       <section className="mx-auto lg:mx-0 relative left-full -translate-x-full">
-        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+        <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
           Work Experience
         </h2>
         <ul role="list" className="mt-10">
           <li className="py-5 mb-10 bg-[#3f3030] p-12 rounded-lg">
-            <p className="flex justify-between items-center w-full">
+            <p className="flex flex-wrap justify-between items-center w-full">
               <span className="text-lg font-semibold leading-6">
                 Frontend Developer, Remote (Coimbatore, India) - PreSkale{" "}
               </span>
@@ -37,7 +37,7 @@ export default function WorkExperience() {
               providing guidance on React best practices to backend-focused
               full-stack developers.
             </p>
-            <div className="flex gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3">
               <Badge>React</Badge>
               <Badge>NextJS</Badge>
               <Badge>JavaScript</Badge>
@@ -51,7 +51,7 @@ export default function WorkExperience() {
             </div>
           </li>
           <li className="py-5 bg-[#3f3030] p-12 rounded-lg">
-            <p className="flex justify-between items-center w-full">
+            <p className="flex flex-wrap justify-between items-center w-full">
               <span className="text-lg font-semibold leading-6">
                 Frontend Developer, Remote (Delhi, India) - Reqip{" "}
               </span>
@@ -77,7 +77,7 @@ export default function WorkExperience() {
               in new website users and 26% engagement in the 'Talk to the
               expert' video call feature within the first week of launch.
             </p>
-            <div className="flex gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3">
               <Badge>React</Badge>
               <Badge>JavaScript</Badge>
               <Badge>Redux Toolkit</Badge>
