@@ -1,18 +1,12 @@
 import Link from "next/link";
-import {
-  ArrowLongRightIcon,
-  ArrowUpRightIcon,
-} from "@heroicons/react/24/outline";
-import Badge from "@/components/Badge";
-import GithubIcon from "@/components/icons/GithubIcon";
-import Image from "next/image";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import collabEarth from "@/public/images/collabearth.png";
 import cookies from "@/public/images/cookies.jpg";
 import ProjectItem from "@/components/ProjectItem";
 
 export default function Projects() {
   return (
-    <main className="mx-auto max-w-7xl px-4 lg:px-20 py-24">
+    <>
       <section className="mx-auto lg:mx-0 relative left-full -translate-x-full">
         <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
           Side Projects
@@ -103,7 +97,7 @@ export default function Projects() {
             description="A simple arcade game made powered with HTML5 canvas and developed using Object Oriented JavaScript. The game can keep track of scores and lives of the player which is also updated on the screen using canvas elements."
             link="https://github.com/crisner/arcade-game"
             skills={["Html5 Canvas", "JavaScript"]}
-            />
+          />
           <ProjectItem
             title="Memory Game"
             description="A browser-based card matching game that tests the player's memory and concentration. The game uses JavaScript to keep track of scores and JavaScript's event listeners for the user to play the game."
@@ -113,25 +107,25 @@ export default function Projects() {
           <ProjectItem
             title="Todo List"
             description="A simple todo list that runs in the browser and is developed using JavaScript. Used Animate.css library for animations and JSDoc for documentation."
-            link='https://github.com/crisner/todo-list'
+            link="https://github.com/crisner/todo-list"
             skills={["Html", "CSS", "JavaScript"]}
           />
           <ProjectItem
             title="Pixel Art Maker"
             description="A web application to play with pixel art. It displays a grid size selected by the user which can be painted upon with tools from the displayed toolbox."
-            link='https://github.com/crisner/pixel-art-maker'
+            link="https://github.com/crisner/pixel-art-maker"
             skills={["Html", "CSS", "JQuery"]}
           />
           <ProjectItem
             title="Weather App"
             description="A weather app that uses Google's geolocation API to find the user's current location and displays current temperature and weather by making use of the Open Weather Map api."
-            link='https://github.com/crisner/weather-app'
+            link="https://github.com/crisner/weather-app"
             skills={["Html", "CSS", "JQuery", "Bootstrap"]}
           />
           <ProjectItem
             title="Wikipedia Viewer"
             description="Uses the Wikipedia API to filter and display search results from Wikipedia for the query entered by the user."
-            link='https://github.com/crisner/wikipedia-viewer'
+            link="https://github.com/crisner/wikipedia-viewer"
             skills={["Html", "CSS", "JQuery", "CSS Grid"]}
           />
         </ul>
@@ -140,6 +134,6 @@ export default function Projects() {
           <ArrowLongRightIcon className="h-6 w-6" />
         </Link>
       </section>
-    </main>
+    </>
   );
 }

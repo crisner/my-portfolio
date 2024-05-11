@@ -14,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <NavBar />
+        <main className="mx-auto max-w-7xl px-4 lg:px-20 py-24">
         {children}
+        </main>
         </body>
     </html>
   );
