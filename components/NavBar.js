@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import {
   Bars3Icon,
   XMarkIcon,
   // EnvelopeIcon
 } from "@heroicons/react/24/outline";
-import {
-  EnvelopeIcon
-} from "@heroicons/react/24/solid";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import GithubIcon from "@/components/icons/GithubIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
@@ -20,6 +18,13 @@ import Link from "next/link";
 const NavBar = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  }, [pathname]);
+
   return (
     <nav
       className="mx-auto flex items-center justify-between p-4 lg:px-8 fixed z-10 top-0 w-full"
@@ -84,14 +89,30 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex lg:gap-x-12">
-        <Link
-            href="mailto:christie.reni@gmail.com" className={`${styles.link_icon}`}><EnvelopeIcon className="h-5 w-5" /></Link>
           <Link
-            href="https://www.linkedin.com/in/renishachristie/" className={`${styles.link_icon}`}><LinkedInIcon className="h-4 w-4 social-icon" /></Link>
+            href="mailto:christie.reni@gmail.com"
+            className={`${styles.link_icon}`}
+          >
+            <EnvelopeIcon className="h-5 w-5" />
+          </Link>
           <Link
-            href="https://github.com/crisner" className={`${styles.link_icon}`}><GithubIcon className="h-4 w-4 social-icon" /></Link>
+            href="https://www.linkedin.com/in/renishachristie/"
+            className={`${styles.link_icon}`}
+          >
+            <LinkedInIcon className="h-4 w-4 social-icon" />
+          </Link>
           <Link
-            href="https://twitter.com/crisner86" className={`${styles.link_icon}`}><TwitterIcon className="h-4 w-4 social-icon" /></Link>
+            href="https://github.com/crisner"
+            className={`${styles.link_icon}`}
+          >
+            <GithubIcon className="h-4 w-4 social-icon" />
+          </Link>
+          <Link
+            href="https://twitter.com/crisner86"
+            className={`${styles.link_icon}`}
+          >
+            <TwitterIcon className="h-4 w-4 social-icon" />
+          </Link>
         </div>
       </div>
       <Dialog
