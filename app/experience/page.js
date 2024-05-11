@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import Badge from "@/components/Badge";
+import ProjectItem from "@/components/ProjectItem";
 
 export default function WorkExperience() {
   return (
@@ -10,15 +11,10 @@ export default function WorkExperience() {
           Work Experience
         </h2>
         <ul role="list" className="mt-10">
-          <li className="py-5 mb-10 bg-[#3f3030] p-12 rounded-lg">
-            <p className="flex flex-wrap justify-between items-center w-full">
-              <span className="text-lg font-semibold leading-6">
-                Frontend Developer, Remote (Coimbatore, India) - PreSkale{" "}
-              </span>
-              <span className="text-sm">2022 - Present</span>
-            </p>
-            <p className="text-base text-stone-400 mt-4">
-              During my tenure at PreSkale, I spearheaded the implementation of
+          <ProjectItem
+            title="Frontend Developer, Remote (Coimbatore, India) - PreSkale"
+            year="2022 - Present"
+            description="During my tenure at PreSkale, I spearheaded the implementation of
               React best practices, which included adopting a modular component
               architecture and utilizing React hooks for state management. This
               initiative led to a notable 20% reduction in code review time.
@@ -35,30 +31,21 @@ export default function WorkExperience() {
               remote team members. Lastly, I contributed to improving overall
               frontend code quality by conducting comprehensive code reviews and
               providing guidance on React best practices to backend-focused
-              full-stack developers.
-            </p>
-            <div className="flex flex-wrap gap-2 mt-3">
-              <Badge>React</Badge>
-              <Badge>NextJS</Badge>
-              <Badge>JavaScript</Badge>
-              <Badge>Redux Toolkit</Badge>
-              <Badge>React Query</Badge>
-              <Badge>RxJS</Badge>
-              <Badge>Ant Design</Badge>
-              <Badge>Tailwind CSS</Badge>
-              <Badge>AWS</Badge>
-              <Badge>Figma</Badge>
-            </div>
-          </li>
-          <li className="py-5 mb-10 bg-[#3f3030] p-12 rounded-lg">
-            <p className="flex flex-wrap justify-between items-center w-full">
-              <span className="text-lg font-semibold leading-6">
-                Frontend Developer, Remote (Delhi, India) - Reqip{" "}
-              </span>
-              <span className="text-sm">2020 - 2022</span>
-            </p>
-            <p className="text-base text-stone-400 mt-4">
-              During my time at Reqip, I oversaw the development and successful
+              full-stack developers."
+            skills={[
+              "React",
+              "NextJS",
+              "JavaScript",
+              "Redux Toolkit",
+              "RTK Query",
+              "Ant Design",
+              "SASS",
+            ]}
+          />
+          <ProjectItem
+            title="Frontend Developer, Remote (Delhi, India) - Reqip"
+            year="2020 - 2022"
+            description={`During my time at Reqip, I oversaw the development and successful
               launch of four projects, ensuring alignment with stakeholder
               requirements from conception to deployment. By collaborating
               closely with product management, I gathered feature requirements
@@ -75,34 +62,42 @@ export default function WorkExperience() {
               led the development and launch of a direct-to-consumer (D2C) store
               with integrated video call support, which achieved a 60% increase
               in new website users and 26% engagement in the 'Talk to the
-              expert' video call feature within the first week of launch.
-            </p>
-            <div className="flex flex-wrap gap-2 mt-3">
-              <Badge>React</Badge>
-              <Badge>JavaScript</Badge>
-              <Badge>Redux Toolkit</Badge>
-              <Badge>RTK Query</Badge>
-              <Badge>Ant Design</Badge>
-              <Badge>SASS</Badge>
-            </div>
-          </li>
-          <li className="py-5 bg-[#3f3030] p-12 rounded-lg">
-            <p className="flex flex-wrap justify-between items-center w-full">
-              <span className="text-lg font-semibold leading-6">
-                Web Developer, Freelancer{" "}
-              </span>
-              <span className="text-sm">2019</span>
-            </p>
-            <p className="text-base text-stone-400 mt-4">
-            I developed a responsive static website for an architecture firm using GatsbyJS, a modern framework for building fast websites. I also leveraged GraphQL to seamlessly query data from both the local file system and the YouTube API, enabling dynamic content integration and enhanced user experience. The website showcases the firm's portfolio, services, and projects in a visually appealing and accessible manner, catering to diverse audiences across various devices. By utilizing GatsbyJS and GraphQL, the website delivers optimal performance and scalability while offering seamless content management capabilities.
-            </p>
-            <div className="flex flex-wrap gap-2 mt-3">
-              <Badge>GatsbyJS</Badge>
-              <Badge>GraphQL</Badge>
-              <Badge>Bootstrap</Badge>
-              <Badge>SASS</Badge>
-            </div>
-          </li>
+              expert' video call feature within the first week of launch.`}
+            skills={[
+              "React",
+              "NextJS",
+              "JavaScript",
+              "Redux Toolkit",
+              "React Query",
+              "RxJS",
+              "Ant Design",
+              "Tailwind CSS",
+              "SASS",
+              "AWS",
+              "Figma",
+            ]}
+          />
+          <ProjectItem
+            title="Intern, Remote (New Orleans, US) - Software Freedom Conservancy, Outreachy, Public Lab"
+            description={`During my internship at Outreachy/Public Lab, I played a key role in enhancing the user experience and performance of the Public Lab's Leaflet web mapping library, which displays environmental data from various sources on a unified map using Leaflet, a JavaScript library for interactive maps. I implemented the filters UI in the layer menu to provide users with comprehensive layer information, significantly improving clarity and navigation ease. Additionally, I developed a feature to optimize default markers by converting them into simple circle markers, resulting in improved visibility and reducing page lag by 80% - 90% when there are numerous markers on the page. Collaborating with a co-intern, I successfully resolved integration issues in the Leaflet web mapping library and integrated end-to-end testing with Cypress to ensure seamless functionality and a positive user experience. Addressing various challenges, I also enabled effective viewing of multiple inline maps on a page, enhancing the library's functionality on the main website and facilitating seamless comparison of environmental data.`}
+            skills={['JavaScript', 'Leaflet', 'Cypress', 'Travis-CI']}
+            year='2019 - 2020'
+          />
+          <ProjectItem
+            title="Web Developer, Freelancer"
+            year="2019"
+            description={`I developed a responsive static website for an architecture firm
+              using GatsbyJS, a modern framework for building fast websites. I
+              also leveraged GraphQL to seamlessly query data from both the
+              local file system and the YouTube API, enabling dynamic content
+              integration and enhanced user experience. The website showcases
+              the firm's portfolio, services, and projects in a visually
+              appealing and accessible manner, catering to diverse audiences
+              across various devices. By utilizing GatsbyJS and GraphQL, the
+              website delivers optimal performance and scalability while
+              offering seamless content management capabilities.`}
+            skills={["GatsbyJS", "GraphQL", "Bootstrap", "SASS"]}
+          />
         </ul>
         <Link href="/projects" className="flex items-center gap-2 mt-16">
           <small>Check out my side projects</small>

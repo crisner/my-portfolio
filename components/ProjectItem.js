@@ -15,14 +15,14 @@ const ProjectItem = ({
   return (
     <li className="py-5 mb-10 bg-[#3f3030] p-12 rounded-lg">
       <p className="flex flex-wrap justify-between items-center w-full">
-        <a
+        {link ? <a
           href={link}
           target="_blank"
           className="flex gap-2 items-baseline link-text"
         >
           <span className="text-lg font-semibold leading-6">{title}</span>
           <ArrowUpRightIcon className="h-3 w-3" />
-        </a>
+        </a>: <span className="text-lg font-semibold leading-6">{title}</span>}
         {year && <span className="text-sm">{year}</span>}
       </p>
       <div className="flex flex-wrap gap-2 justify-evenly items-start  mt-4">
