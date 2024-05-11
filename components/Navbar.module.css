@@ -1,0 +1,30 @@
+.nav_item, .link_icon {
+  text-decoration: none;
+  position: relative;
+  bottom: -1px;
+}
+
+.link_icon:hover:after,
+.nav_item:hover:after,
+.nav_item:active:after,
+.nav_item:focus:after,
+.active:after {
+  content: "";
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  border: 2px solid var(--accent-color);
+  transform: translate(-50%, 0);
+}
+
+.nav_sm {
+  color: var(--text-color);
+  background: var(--background-color);
+  box-shadow: 9px 2px 14px 12px #00000094 !important;
+}
+
+.nav_item_sm:hover,
+.active_sm {
+  color: var(--accent-color);
+}
