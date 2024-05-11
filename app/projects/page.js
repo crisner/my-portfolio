@@ -17,16 +17,7 @@ export default function Projects() {
                 Collaborative data visualization platform"
             description={
               <>
-                I'm currently immersed in Collab Earth, a web application
-                crafted to visualize elephant conservation data using
-                TypeScript, React, Leaflet, Formik, Yup, and NextAuth. This
-                project integrates a secure user authentication system via
-                NextAuth, enabling custom login credentials and Google provider
-                support. With Leaflet, the home screen boasts an interactive
-                map. MongoDB ensures secure data storage, managed seamlessly
-                with Mongoose for efficient database interaction. I'm also
-                documenting the progress of this project in a blog post, which
-                you can find{" "}
+                I'm currently immersed in Collab Earth, a collaborative conservation visualization tool for the web designed to facilitate effective collaboration among conservation enthusiasts. This platform allows users to add sightings data and notes, enabling seamless collaboration with peers. Collab Earth is built using TypeScript, React, Leaflet, Formik, Yup, and NextAuth, providing a robust and user-friendly experience. The project integrates a secure user authentication system via NextAuth, supporting custom login credentials and Google provider support. The home screen features an interactive map powered by Leaflet, enhancing user engagement and exploration. Data is securely stored in MongoDB, with Mongoose ensuring efficient database interaction. I'm also documenting the progress of this project in a blog post, which you can find{" "}
                 <a
                   href="https://blog.renishachristie.com/series/making-of-collab-earth"
                   className="link-text"
@@ -54,7 +45,7 @@ export default function Projects() {
           />
           <ProjectItem
             title="Cookies - E-commerce website"
-            description="This is an E-commerce website using the MERN stack with Redux for state management. TypeScript with React was employed for type-checking, enhancing front-end stability. I established a REST API with Express.js for CRUD operations and implemented authentication and session persistence using Passport.js."
+            description="This project is an E-commerce website built using the MERN stack, leveraging Redux for state management to ensure smooth user interactions. TypeScript with React was utilized for type-checking, enhancing front-end stability and reducing errors. The REST API, established with Express.js, enables seamless CRUD operations, allowing users to browse, add, update, and remove products from their cart. Authentication and session persistence are implemented using Passport.js, ensuring secure access to user accounts and seamless browsing sessions. Data is stored in a MongoDB database, with Mongoose used to connect and interact with the database, facilitating efficient data management and retrieval."
             image={cookies}
             imageAlt="E-commerce project"
             link="https://github.com/crisner/cookies-e-commerce-website"

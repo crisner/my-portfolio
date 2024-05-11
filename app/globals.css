@@ -46,3 +46,8 @@ main {
 .social-icon {
   fill: var(--text-color);
 }
+
+.project-thumbnail {
+  width: 200px;
+  height: 160px;
+}
