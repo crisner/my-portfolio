@@ -12,6 +12,18 @@
 body {
   color: var(--text-color);
   background: var(--background-color);
+  min-height: calc(100vh - 68px);
+}
+
+.centered-content {
+  min-height: calc(100vh - 260px); /* Navbar-height:68 + padding-top:96 + padding-bottom:96 */
+}
+
+@media (max-width: 768px) {
+  .centered-content {
+    min-height: calc(100vh - 200px); /* Navbar-height:68 + padding-top:32 + padding-bottom:32 */
+    /* Reduced height to look offcentered and closer to the top */
+  }
 }
 
 nav {
@@ -28,6 +40,7 @@ nav {
 
 main {
   margin-top: 68px;
+  min-height: calc(100vh - 68px);
 }
 
 .social-icon {

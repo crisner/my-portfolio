@@ -64,7 +64,7 @@ export default async function Blog() {
         {posts.map(({ node: post }) => (
           <article
             key={post.id}
-            className="flex flex-col items-start justify-between py-5 mb-5 bg-[#3f3030] p-12 rounded-lg"
+            className="flex flex-col items-start justify-between py-5 mb-5 bg-[#3f3030] px-5 md:px-12 rounded-lg"
           >
             <div className="group relative">
               <h3 className="text-lg font-semibold leading-6">
@@ -75,14 +75,14 @@ export default async function Blog() {
                 >
                   <span className="absolute inset-0" />
                   {post.title}
-                  <ArrowUpRightIcon className="h-3 w-3" />
+                  <ArrowUpRightIcon className="h-3 w-3 min-w-3" />
                 </a>
               </h3>
               <p className="line-clamp-3 text-sm leading-6 mt-2">
                 {post.brief}
               </p>
               <div className="flex justify-end mt-1 text-xs w-full">
-                <time dateTime={post.publishedAt} className="text-stone-500">
+                <time dateTime={post.publishedAt} className="text-stone-400">
                   {new Date(post.publishedAt).toLocaleDateString(
                     "en-us",
                     options

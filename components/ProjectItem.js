@@ -13,7 +13,7 @@ const ProjectItem = ({
   skills = [],
 }) => {
   return (
-    <li className="py-5 mb-10 bg-[#3f3030] p-12 rounded-lg">
+    <li className="py-5 mb-10 bg-[#3f3030] px-5 md:px-12 rounded-lg">
       <p className="flex flex-wrap justify-between items-center w-full">
         {link ? <a
           href={link}
@@ -21,7 +21,7 @@ const ProjectItem = ({
           className="flex gap-2 items-baseline link-text"
         >
           <span className="text-lg font-semibold leading-6">{title}</span>
-          <ArrowUpRightIcon className="h-3 w-3" />
+          <ArrowUpRightIcon className="h-3 w-3 min-w-3" />
         </a>: <span className="text-lg font-semibold leading-6">{title}</span>}
         {year && <span className="text-sm">{year}</span>}
       </p>

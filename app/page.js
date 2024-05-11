@@ -3,7 +3,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
-    <section className="mx-auto max-w-3xl lg:mx-0 mt-24">
+    <section className="mx-auto max-w-3xl md:mx-0 md:mt-24">
       <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
         Hi, I'm Renisha Christie!
       </h2>

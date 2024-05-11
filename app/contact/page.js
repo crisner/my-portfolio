@@ -10,8 +10,8 @@ import TwitterIcon from "@/components/icons/TwitterIcon";
 
 export default function Contact() {
   return (
-    <div className="flex justify-center">
-      <section className="mx-auto max-w-3xl lg:mx-0 mt-24">
+    <div className="flex justify-center items-center centered-content">
+      <section className="mx-auto max-w-3xl text-left md:mx-0">
         <p className="mt-6 text-lg leading-8 text-gray-300">
           Let's connect! Whether you're interested in discussing potential
           collaborations, diving deeper into my work, or simply grabbing a
