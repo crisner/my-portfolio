@@ -84,7 +84,7 @@ export default function WorkExperience() {
         />
         <ProjectItem
           title="Web Developer, Freelancer"
-          year="2019"
+          year="2017 - 2019"
           description={`I developed a responsive static website for an architecture firm
               using GatsbyJS, a modern framework for building fast websites. I
               also leveraged GraphQL to seamlessly query data from both the
@@ -94,8 +94,8 @@ export default function WorkExperience() {
               appealing and accessible manner, catering to diverse audiences
               across various devices. By utilizing GatsbyJS and GraphQL, the
               website delivers optimal performance and scalability while
-              offering seamless content management capabilities.`}
-          skills={["GatsbyJS", "GraphQL", "Bootstrap", "SASS"]}
+              offering seamless content management capabilities. My experience extended beyond this project. I built several others and contributed to open-source projects, solidifying my technical skills and fostering a collaborative spirit.`}
+          skills={["GatsbyJS", "GraphQL", "Bootstrap", "SASS", "JavaScript", "React"]}
         />
       </ul>
       <Link href="/projects" className="flex items-center gap-2 mt-16">
